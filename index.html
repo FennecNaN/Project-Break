@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <!-- Fecha  -->
+
+    <div id="allDate">
+      <h2>Reloj Digital</h2>
+      <div id="clock"></div>
+      <div id="date"></div>
+      <div id="message"></div>
+    </div>
+
+    <!-- password -->
+
+    <div id="passGenerator">
+      <h2>Generador de contraseñas</h2>
+      <p>Longitud de la Contraseña:</p>
+      <p>
+        <input type="number" id="passLength" min="12" max="50" value="12" />
+        <button id="generateBtn">Generar Contraseña</button>
+      </p>
+      <div id="showPass"></div>
+    </div>
+
+    <!-- enlaces -->
+
+    <div id="addLinks">
+      <h2>Añade tu enlace de interés</h2>
+      <input type="text" id="linkName" />
+      <input type="url" id="linkUrl" />
+      <button id="addBtn">Añadir link</button>
+      <ul id="favourites"></ul>
+    </div>
+
+
+
+    <!-- scripts -->
+    <script src="./js/clock and wallpapers.js"></script>
+    <script src="./js/links.js"></script>
+    <script src="./js/pass.js"></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>

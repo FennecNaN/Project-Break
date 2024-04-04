@@ -1,0 +1,102 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(134, 131, 131);
+}
+
+/* RELOJ DIGITAL */
+
+#allDate {
+  background-color: rgb(73, 94, 87);
+}
+
+#clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* GENERADOR DE CONTRASEÑAS */
+
+#passGenerator {
+  background-color: rgb(79, 73, 94);
+}
+
+#showPass {
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#passLength {
+  padding: 10px 20px;
+
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+#generateBtn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* AÑADIR LINKS */
+
+#addLinks {
+  background-color: rgb(36, 90, 50);
+}
+
+#addBtn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#linkName {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+#linkUrl {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  background-color:   #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
