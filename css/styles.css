@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% auto;
+  border: solid green 3px;
 }
 
 h2 {
@@ -331,12 +332,12 @@ li button {
 }
 
 #hoursList > div {
-  margin-right: 10px; /* Ajusta este valor según tu preferencia */
+  margin-right: 10px; 
 }
 
 #hoursList p,
 #hoursList img {
-  margin: 0px 0; /* Espacio entre los elementos internos */
+  margin: 0px 0; 
 }
 
 .currentInfo p {
