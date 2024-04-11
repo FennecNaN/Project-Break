@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Project</title>
+  </head>
+  <body>
+
+      <nav class="navBar">
+        <div id="home" class="fa-solid fa-house fa-2xl" onclick="irA('index.html')"></div>
+        <div id="reloj" class="fa-solid fa-clock fa-2xl" onclick="irA('clock.html')"></div>
+        <div id="links" class="fa-solid fa-link fa-2xl" onclick="irA('link.html')"></div>
+        <div id="contraseñas" class="fa-solid fa-key fa-2xl" onclick="irA('pass.html')"></div>
+        <div id="estacion" class="fa-solid fa-cloud fa-2xl" onclick="irA('weather.html')"></div>
+      
+      </nav>
+
+
+    <div id="weather-page"  class="divWeather widget">
+    <input type="text" id="citySearch" value="Mislata" /> 
+    <button id="searchBtn">Consultar ciudad</button>
+      <h2>El tiempo</h2>
+      <div class="currentWeather">
+        <div class="currentIcon">
+          <p id="condition"></p>
+          <img id="image"></img>
+        </div>
+        <div class="currentInfo">
+        <p><span id="city"></span></p>
+        <p><span id="country"></span></p>
+        <p>Temp: <span id="temperature"></span>°C</p>
+        <p>Precipitaciones: <span id="precipitation"></span> mm</p>
+        <p>Humedad: <span id="humidity"></span>%</p>
+        <p>Viento: <span id="wind"></span> km/h</p>
+      </div>
+      </div>
+      <div id="hours-page" class="hoursWeather">
+          <div id="hoursList" class="hoursPage"></div>
+      </div>
+   </div>
+
+  </body>
+  <script src="./js/nav.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/wallpaper.js"></script>
+  <script src="https://kit.fontawesome.com/683ce0e960.js" crossorigin="anonymous"></script>
+
+</html>

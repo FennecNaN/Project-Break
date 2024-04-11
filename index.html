@@ -7,9 +7,23 @@
     <title>Project</title>
   </head>
   <body>
-    <!-- Fecha  -->
 
-    <div id="allDate">
+    <!-- icon links -->
+    <div class="container">
+    <nav class="navBar">
+      <div id="home" class="fa-solid fa-house fa-2xl" onclick="irA('index.html')"></div>
+      <div id="reloj" class="fa-solid fa-clock fa-2xl" onclick="irA('clock.html')"></div>
+      <div id="links" class="fa-solid fa-link fa-2xl" onclick="irA('link.html')"></div>
+      <div id="contraseñas" class="fa-solid fa-key fa-2xl" onclick="irA('pass.html')"></div>
+      <div id="estacion" class="fa-solid fa-cloud fa-2xl" onclick="irA('weather.html')"></div>
+    
+    </nav>
+
+    <!-- div contenedores  -->
+    <div class="content">
+    <!-- clock  -->
+
+    <div id="allDate" class="widget">
       <h2>Reloj Digital</h2>
       <div id="clock"></div>
       <div id="date"></div>
@@ -18,7 +32,7 @@
 
     <!-- password -->
 
-    <div id="passGenerator">
+    <div id="passGenerator" class="widget">
       <h2>Generador de contraseñas</h2>
       <p>Longitud de la Contraseña:</p>
       <p>
@@ -28,22 +42,54 @@
       <div id="showPass"></div>
     </div>
 
-    <!-- enlaces -->
+    <!-- links -->
 
-    <div id="addLinks">
+    <div id="addLinks" class="widget">
       <h2>Añade tu enlace de interés</h2>
-      <input type="text" id="linkName" />
-      <input type="url" id="linkUrl" />
+      <input type="text" id="linkName" placeholder="Descripción" />
+      <input type="url" id="linkUrl" placeholder="Link" />
       <button id="addBtn">Añadir link</button>
       <ul id="favourites"></ul>
     </div>
 
+    <!-- weather -->
+
+    <div class="divWeather widget">
+      <h2>El tiempo</h2>
+      <input type="text" id="citySearch"  placeholder="Ciudad" value="Mislata"/> 
+      <button id="searchBtn">Consultar</button>
+          
+          <div class="currentWeather">
+              <div class="currentIcon">
+                <p id="condition"></p>
+                <img id="image"></img>
+              </div>
+              <div class="currentInfo">
+              <p><span id="city"></span></p>
+              <p><span id="country"></span></p>
+              <p>Temp: <span id="temperature"></span>°C</p>
+              <p>Precipitaciones: <span id="precipitation"></span> mm</p>
+              <p>Humedad: <span id="humidity"></span>%</p>
+              <p>Viento: <span id="wind"></span> km/h</p>
+            </div>
+          </div>
+          <div class="hoursWeather">
+              <div id="hoursList"></div>
+          </div>
+      </div>
 
 
+    </div>
     <!-- scripts -->
-    <script src="./js/clock and wallpapers.js"></script>
+    <script src="./js/clock.js"></script>
     <script src="./js/links.js"></script>
     <script src="./js/pass.js"></script>
     <script src="./js/weather.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/wallpaper.js"></script>
+    <script src="https://kit.fontawesome.com/683ce0e960.js" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>
+
+
