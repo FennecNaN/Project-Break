@@ -1,11 +1,12 @@
+
 body {
   font-family: "Arial", sans-serif;
   font-weight: bold;
+  background-attachment: fixed;
   background-color: #66416b;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% auto;
-  border: solid green 3px;
 }
 
 h2 {

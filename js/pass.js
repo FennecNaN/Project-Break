@@ -12,7 +12,7 @@ function generatePass(length){
     let charactersPass = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789!@#$%&/*-+"
     let password = "";
 
-    for (let i=0; i<= length; i++){12
+    for (let i=0; i<= length; i++){
         password += charactersPass.charAt(Math.floor(Math.random() * charactersPass.length ))
     }
 
